@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fruit Calcultor !</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>Fruit Shop</header>
+        <nav>I Have Rs: <input type="number" class="quantity" min=0 onmouseout="values();"></nav>
+        <section> Your total is Rs: <span></span></section>
+        <div id="content">
+            <figcaption>
+                <p>Rs: 10</p>
+                <img src="images/apple.png" alt="">
+                <h5>Apple</h5>
+                <div id="btn-ip">
+                    <div id="minus"><button onclick="dec_apple(); ">-</button></div>
+                    <input type="number" id="app_id" class="quantity" min=0>
+                    <div id="plus"><button onclick="inc_apple()">+</button></div>
+                </div>
+            </figcaption>
+            <figcaption>
+                <p>Rs: 15</p>
+                <img src="images/orange.png" alt="">
+                <h5>Orange</h5>
+                <div id="btn-ip">
+                    <div id="minus"><button onclick="dec_orange()">-</button></div>
+                    <input type="number" id="org_id" class="quantity" min=0>
+                    <div id="plus"><button onclick="inc_orange()  ">+</button></div>
+                </div>
+            </figcaption>
+            <figcaption>
+                <p>Rs: 7</p>
+                <img src="images/banana.png" alt="">
+                <h5>Banana</h5>
+                <div id="btn-ip">
+                    <div id="minus"><button onclick="dec_banana();">-</button></div>
+                    <input type="number" id="bana_id" class="quantity" min=0>
+                    <div id="plus"><button onclick="inc_banana()">+</button></div>
+                </div>
+            </figcaption>
+        </div>
+    </div>
+</body>
+
+</html>

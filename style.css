@@ -1,0 +1,177 @@
+#container{
+ display:flex;
+ flex-direction: column;   
+}   
+    header{
+    background-image: linear-gradient(180deg, #454a51 20%, #60687c,#454a51);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding:10px;
+}
+nav{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav input{
+    border-radius:20px 20px;
+    width: 50px;
+    border:1px solid black;
+    padding:10px;
+    font-size: 20px;
+    text-align: center;
+    outline:none;
+    }
+    section{
+        background-color: #efe2cc;
+        font-size: 20px;
+        text-align: center;
+        padding: 35px;
+    }
+    section span{
+        color: red;
+        font-size: 30px;
+    }
+    #content{
+        background-image: linear-gradient(180deg, #3a3f40 30%,#626a7e,#3f4549);
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto ;
+        text-align: center;
+        padding:30px;
+    }
+    #content figcaption{
+        margin-left:30px;
+        margin-top:30px;
+        border: 1px solid black;
+        padding-bottom:1px;
+        width:50%;
+        height:90%;
+        background-color: #fff;
+    }
+    #content figcaption  img{
+        margin-top:0px;
+        width:100px;
+        height:100px;
+    }
+    #content figcaption p{
+        margin: 0px;
+        background-color:#346e34;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+}
+#content figcaption h5{
+    margin:0px;
+    font-size: 20px;
+    font-weight: bold;
+} 
+     #btn-ip{
+        display: flex;
+        justify-content:space-between;
+        border:1px solid black;
+        border-radius:20px;
+        margin: auto;
+        width:80%;
+        
+    } 
+    #btn-ip input{ 
+          flex: 1;
+         margin-top:0px;
+          width:20%; 
+         border:none;
+         padding:5px;
+         font-size: 20px;
+         text-align: center;
+         outline:none; 
+        
+    }
+    #btn-ip #minus button{
+        flex: 1;
+        font-size: 15px;
+        font-weight: bold;
+        border:none;
+        outline: none;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius:20px;
+        color: white;
+        background-color: #424847;
+      }
+      #btn-ip #plus button{
+        flex: 1;
+        font-size: 15px;
+        font-weight: bold;
+        border:none;
+        outline: none;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius:20px;
+        color: white;
+        background-color: #424847;
+      }
+      .quantity::-webkit-inner-spin-button, 
+      .quantity::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+}
+ 
+    @media screen and (max-width: 768px) {
+        #content{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            justify-content: center;
+            align-items: center;
+             width:100%;
+            }
+            #btn-ip{
+                display: flex;
+                justify-content:space-between;
+                border:1px solid black;
+                border-radius:20px;
+                margin: auto;
+                width:90%;
+                
+            } 
+            #btn-ip input{ 
+                flex: 1;
+               margin-top:0px;
+                width:20%; 
+               border:none;
+               padding:5px;
+               font-size: 20px;
+               text-align: center;
+               outline:none; 
+              
+          }
+          #btn-ip #minus button{
+              flex: 1;
+              font-size: 15px;
+              font-weight: bold;
+              border:none;
+              outline: none;
+              padding: 10px;
+              border-top-left-radius: 20px;
+              border-bottom-left-radius:20px;
+              color: white;
+              background-color: #424847;
+            }
+            #btn-ip #plus button{
+              flex: 1;
+              font-size: 15px;
+              font-weight: bold;
+              border:none;
+              outline: none;
+              padding: 10px;
+              border-top-right-radius: 20px;
+              border-bottom-right-radius:20px;
+              color: white;
+              background-color: #424847;
+            }
+       
+       
+
+    }
